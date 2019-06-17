@@ -1,3 +1,652 @@
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+header {
+
+
+    position: relative;
+    width: 20vw;
+    left: 22vw;
+    z-index: 22;
+
+}
+
+header a {
+    text-decoration: none;
+    /***** så understreg kommer væk****/
+    color: #161618;
+    /******** cmd E (skifter fave)*******/
+    padding-left: 1vw;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    display: block;
+    font-family: 'Courgette', cursive;
+}
+
+.baggrund {
+
+    position: relative;
+    width: 100vw;
+    height: 66.5vw;
+    background-image: url(img/baggrund_01.jpg);
+    background-size: cover;
+    top: 0vw;
+
+
+
+}
+
+.nav {
+
+    position: fixed;
+    background-image: url(img/creditflag2.png);
+    width: 10vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    z-index: 2;
+    left: 87vw;
+    top: .5vw;
+    background-size: contain;
+}
+
+.credit a {
+
+    position: relative;
+    left: .7vw;
+    top: 3vw;
+
+
+}
+
+
+/**** OM MIG START ***/
+
+.mig {
+
+    margin: 6vw 0vw;
+    border-radius: 20%;
+    width: 25vw;
+}
+
+.omMig {
+
+    /*    position: relative;*/
+    background-color: #685d27;
+    width: 46vw;
+    /*    height: 28vw;*/
+    margin: -4vw 25vw;
+    border-radius: 20%;
+    padding-top: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 3vw;
+
+}
+
+.omMig a {
+
+    font-size: 1em;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.omBaggrund {
+
+    position: relative;
+    width: 100vw;
+    height: 66.5vw;
+    background-image: url(img/baggrund_01.jpg);
+    background-size: contain;
+    top: 0vw;
+}
+
+.imgMig {
+
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) and (orientation:landscape) {
+    .omMig {
+        border-radius: 10%;
+    }
+}
+
+/** OM MIG SLUT **/
+
+/****** SLIDESHOW *******/
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 50vw;
+    position: relative;
+    margin-left: 27vw;
+    top: 5vw;
+    border-radius: 50%;
+    left: 0vw;
+    z-index: 21;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 0vw;
+    padding: 0.5vw;
+    color: #685d27;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: -1vw;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    bottom: 8.6vw;
+    width: 90%;
+    text-align: center;
+    left: 4vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+.porfolio .text {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    bottom: -5.4vw;
+    width: 90%;
+    text-align: center;
+    left: 4vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+.animation .text {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    bottom: 7.6vw;
+    width: 90%;
+    text-align: center;
+    left: 4vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+.video .text {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    bottom: 7.6vw;
+    width: 90%;
+    text-align: center;
+    left: 4vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+.ux .text {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    bottom: 8.6vw;
+    width: 90%;
+    text-align: center;
+    left: 4vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+
+
+.text2 {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    margin-top: 9vw;
+    width: 80%;
+    text-align: center;
+    left: 12vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    top: 25vw;
+}
+
+.text3 {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    margin-top: -2vw;
+    width: 80%;
+    text-align: center;
+    left: 5.5vw;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    top: 25vw;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Image border-radius */
+
+.slideshow-container img {
+
+    border-radius: 34%;
+
+}
+
+
+
+/* The dots/bullets/indicators */
+
+/*
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+*/
+
+/*
+.active,
+.dot:hover {
+    background-color: #422121;
+}
+*/
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.arrowBack {
+
+    position: relative;
+    width: 5vw;
+    left: 19vw;
+    top: 5vw;
+
+
+}
+
+.backThemes {
+
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    width: 5vw;
+    left: 19.5vw;
+    top: 5vw;
+    color: #685d27;
+    font-size: 1vw;
+
+}
+
+.container .text {
+
+    top: 36vw;
+
+
+}
+
+
+.stilArtSite {
+
+    position: relative;
+    margin: auto;
+    top: 5vw;
+    border-radius: 20%;
+    width: 40vw;
+    left: 28vw;
+    top: -1vw;
+}
+
+.flowchart {
+
+    height: 25vw;
+}
+
+.PrivatSnak {
+
+    height: 30vw;
+
+}
+
+.skitse_animation {
+
+    height: 30vw;
+
+}
+
+.video_tarp iframe {
+
+
+    width: 50vw;
+    height: 28vw;
+    left: 50vw;
+    padding: 0 5vw;
+    border-style: none;
+    z-index: 220;
+
+}
+
+.mySlides img {
+
+    padding: 0 5vw;
+
+}
+
+.slideshow-animation img {
+
+    height: 25vw;
+    width: 50vw;
+
+}
+
+.slideshow-video img {
+
+    height: 25vw;
+    width: 50vw;
+
+}
+
+.slideshow-video iframe {
+
+    height: 25vw;
+    width: 50vw;
+    border-radius: 35%;
+    z-index: 3;
+
+}
+
+.slideshow-ux img {
+
+    height: 25vw;
+    width: 50vw;
+
+}
+
+.img {
+
+    position: relative;
+    width: 110vw;
+    left: -6vw;
+    top: -14vw;
+
+}
+
+.overskrift {
+
+    position: relative;
+    width: 15vw;
+    left: 70vw;
+    top: 8vw;
+    color: #685d27;
+    font-size: 1vw;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+
+}
+
+.container .text .stilart {
+
+    top: 25vw;
+
+
+}
+
+.privatSnak .text {
+
+    bottom: 5.6vw;
+
+}
+
+.rentegning .text {
+
+    bottom: 5.6vw;
+}
+
+.animaitonText p {
+
+    color: white;
+    margin-top: 8vw;
+
+}
+
+.html .animaitonText p {
+
+    width: 36vw;
+    margin-left: 37vw;
+    margin-top: 5vw;
+}
+
+.animaitonText p {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/***** MEDIA START ****/
+
+@media screen and (max-width:800px) and (orientation: portrait) {
+    .nav {
+
+
+        background-image: url(img/creditflag_large.png);
+        height: 396vw;
+        top: 8vw;
+        width: auto;
+
+    }
+
+    header a {
+
+        width: 10vw;
+        font-size: 2.1vw;
+        color: black;
+        padding: 3vw 2vw;
+
+    }
+
+    .ux .text {
+
+        bottom: 160.6vw;
+    }
+
+    .ux .prev,
+    .ux .next {
+
+        margin-top: -6vw;
+        font-size: 126px;
+    }
+
+    .animation .prev,
+    .animation .next {
+
+        font-size: 126px;
+    }
+
+    .video .prev,
+    .video .next {
+
+        font-size: 126px;
+    }
+
+    .privatSnak .text {
+
+        bottom: 91.6vw;
+    }
+
+    .animation .text {
+
+        bottom: 87.6vw;
+    }
+
+    .faerdigFort .text {
+
+        bottom: 92.6vw;
+    }
+
+    .animaitonText p {
+
+        width: 64vw;
+        margin-left: -9vw;
+    }
+
+    .baggrund2 {
+
+        position: relative;
+        width: 100vw;
+        height: 66.5vw;
+        background-image: url(img/baggrund3.png);
+        background-size: cover;
+        top: -18vw;
+        left: -27vw;
+        z-index: -10;
+
+    }
+
+    .html .baggrund2 {
+
+        position: relative;
+        width: 100vw;
+        height: 66.5vw;
+        background-image: url(img/baggrund3.png);
+        background-size: cover;
+        top: -3vw;
+        left: -0vw;
+
+    }
+
+
+
+}
+
+footer {
+
+    text-align: center;
+}
+
+/*
+@media screen and (max-width:800px) and (orientation: portrait) {
+
+    .header a {
+
+        padding: 10vw 0vw;
+
+    }
+}
+*/
+
+/***** MEDIA SLUT ****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slide w3 standard */
 * {
     box-sizing: border-box
 }
