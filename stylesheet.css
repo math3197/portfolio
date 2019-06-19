@@ -1,10 +1,14 @@
-body {
+html,
+body,
+    {
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
-
-
-
 
 
 
@@ -21,13 +25,13 @@ header {
 header a {
     text-decoration: none;
     /***** så understreg kommer væk****/
-    color: #161618;
+    color: #ffffff;
     /******** cmd E (skifter fave)*******/
     padding-left: 1vw;
     padding-top: 1vw;
     font-size: 1.5vw;
     display: block;
-    font-family: 'Courgette', cursive;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .baggrund {
@@ -35,8 +39,9 @@ header a {
     position: relative;
     width: 100vw;
     height: 66.5vw;
-    background-image: url(img/baggrund_01.jpg);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/baggrund_03.jpg);
+    background-size: contain;
     top: 0vw;
 
 
@@ -46,14 +51,14 @@ header a {
 .nav {
 
     position: fixed;
-    background-image: url(img/creditflag2.png);
     width: 10vw;
     height: 15vw;
     background-repeat: no-repeat;
     z-index: 2;
-    left: 87vw;
-    top: .5vw;
+    left: 83vw;
+    top: 7vw;
     background-size: contain;
+    font-family: 'Bungee', cursive;
 }
 
 .credit a {
@@ -78,11 +83,11 @@ header a {
 .omMig {
 
     /*    position: relative;*/
-    background-color: #685d27;
+    /*background-color: #000000;*/
     width: 46vw;
     /*    height: 28vw;*/
     margin: -4vw 25vw;
-    border-radius: 20%;
+    /*border-radius: 20%;*/
     padding-top: 3vw;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -99,14 +104,25 @@ header a {
     font-weight: 400;
 }
 
+
 .omBaggrund {
 
     position: relative;
     width: 100vw;
     height: 66.5vw;
-    background-image: url(img/baggrund_01.jpg);
+    background-repeat: no-repeat;
+    background-image: url(img/baggrund_03.jpg);
     background-size: contain;
     top: 0vw;
+}
+
+.omMig p {
+    font-size: 1em;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    color: white;
 }
 
 .imgMig {
@@ -133,7 +149,7 @@ header a {
 .slideshow-container {
     width: 50vw;
     position: relative;
-    margin-left: 27vw;
+    margin-left: 22.5vw;
     top: 5vw;
     border-radius: 50%;
     left: 0vw;
@@ -157,7 +173,7 @@ header a {
     width: auto;
     margin-top: 0vw;
     padding: 0.5vw;
-    color: #685d27;
+    color: #ffffff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -188,7 +204,7 @@ header a {
     bottom: 8.6vw;
     width: 85%;
     text-align: center;
-    top: 35vw;
+    top: 33vw;
     left: 4vw;
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
@@ -468,9 +484,9 @@ header a {
 
     position: relative;
     width: 15vw;
-    left: 70vw;
+    left: 58vw;
     top: 8vw;
-    color: #685d27;
+    color: #ffffff;
     font-size: 1vw;
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
@@ -523,19 +539,18 @@ header a {
     .nav {
 
 
-        background-image: url(img/creditflag_large.png);
-        height: 396vw;
+        height: 15vw;
         top: 8vw;
-        width: auto;
+        width: 8vw;
 
     }
 
     header a {
 
-        width: 10vw;
+        width: 8vw;
         font-size: 2.1vw;
         color: black;
-        padding: 3vw 2vw;
+        padding: 1vw 0vw;
 
     }
 
