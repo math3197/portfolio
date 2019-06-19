@@ -42,7 +42,7 @@ header a {
     background-repeat: no-repeat;
     background-image: url(img/baggrund_03.jpg);
     background-size: contain;
-    top: 0vw;
+
 
 
 
@@ -151,7 +151,7 @@ header a {
     position: relative;
     margin-left: 22.5vw;
     top: 5vw;
-    border-radius: 50%;
+    border-radius: 20%;
     left: 0vw;
     z-index: 21;
 }
@@ -269,13 +269,11 @@ header a {
     font-size: 3vw;
     padding: 2vw 3vw;
     position: absolute;
-    margin-top: 9vw;
     width: 80%;
     text-align: center;
-    left: 12vw;
+    left: 9vw;
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
-    top: 25vw;
 }
 
 .text3 {
@@ -299,42 +297,19 @@ header a {
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: 3vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Image border-radius */
 
 .slideshow-container img {
 
-    border-radius: 34%;
+    border-radius: 20%;
 
 }
 
 
-
-/* The dots/bullets/indicators */
-
-/*
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-*/
-
-/*
-.active,
-.dot:hover {
-    background-color: #422121;
-}
-*/
-
-/* Fading animation */
 
 .fade {
     -webkit-animation-name: fade;
@@ -382,7 +357,7 @@ header a {
     width: 5vw;
     left: 19.5vw;
     top: 5vw;
-    color: #685d27;
+    color: #ffffff;
     font-size: 1vw;
 
 }
@@ -399,11 +374,10 @@ header a {
 
     position: relative;
     margin: auto;
-    top: 5vw;
     border-radius: 20%;
     width: 40vw;
-    left: 28vw;
-    top: -1vw;
+    left: 22.5vw;
+    top: 3vw;
 }
 
 .flowchart {
@@ -411,28 +385,77 @@ header a {
     height: 25vw;
 }
 
-.PrivatSnak {
+.privatSnak .privatSnakContainer {
 
-    height: 30vw;
+    position: relative;
+    margin: auto;
+    width: 40vw;
+    top: -1vw;
 
 }
 
 .skitse_animation {
 
-    height: 30vw;
+    position: relative;
+    margin: auto;
+    border-radius: 20%;
+    width: 40vw;
+    top: -1vw;
 
 }
 
-.video_tarp iframe {
+.assetText {
+    color: #f2f2f2;
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 19vw;
+    left: 5vw;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
 
+.animationText2 {
+    width: 40vw;
+    position: absolute;
+    color: white;
+    top: 28vw;
+    left: 5vw;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 
-    width: 50vw;
-    height: 28vw;
-    left: 50vw;
-    padding: 0 5vw;
-    border-style: none;
-    z-index: 220;
+.flowchart {
+    position: relative;
+    margin: auto;
+    border-radius: 20%;
+    width: 40vw;
+    top: -2vw;
+}
 
+.flowchartText {
+    color: #f2f2f2;
+    font-size: 2.5vw;
+    padding: 2vw 3vw;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 21vw;
+    left: 5vw;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
+
+.uxContainer {
+    position: relative;
+    margin: auto;
+    border-radius: 20%;
+    width: 40vw;
+    height: 29vw;
+    left: 22.5vw;
+    top: 3vw;
 }
 
 .mySlides img {
@@ -511,23 +534,13 @@ header a {
     bottom: 5.6vw;
 }
 
-.animaitonText p {
-
-    color: white;
-    margin-top: 8vw;
-
-}
-
-.html .animaitonText p {
-
+.animationText p {
     width: 36vw;
-    margin-left: 37vw;
-    margin-top: 5vw;
-}
-
-.animaitonText p {
-
+    margin-left: 30vw;
+    margin-top: 6vw;
+    color: white;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 
 }
 
@@ -630,143 +643,5 @@ footer {
     text-align: center;
 }
 
-/*
-@media screen and (max-width:800px) and (orientation: portrait) {
-
-    .header a {
-
-        padding: 10vw 0vw;
-
-    }
-}
-*/
 
 /***** MEDIA SLUT ****/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* slide w3 standard */
-* {
-    /* box-sizing: border-box
-}
-
-/* Slideshow container */
-    /*.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-    /*.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-    /*.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-    /*.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-    /*.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-    /*.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-    /*.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-    /*.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-    /*.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
